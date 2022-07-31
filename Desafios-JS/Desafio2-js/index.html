@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="flex flex-center flex-column">
+        <h1>ME ACHA!</h1>
+        <div>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</div>
+        <img src="icons8-search-64.png" alt="">
+    </header>
+
+    <main class="flex flex-center">
+        <section class="flex flex-center">
+            <form class="flex  flex-column" action="buscar" method="post">
+                <label  for="">Cep</label>
+                <input  id="NumeroCep" type="text"  name="cep">
+                
+                <label for="">Rua</label>
+                <input disabled id="logradouro" type="text"  name="rua">
+
+                <label for="">Bairro</label>
+                <input disabled id="bairro" type="text"  name="bairro">
+
+                <label for="">Cidade</label>
+                <input disabled id="localidade" type="text"  name="cidade">
+            
+                <label for="">Estado</label>
+                <input disabled id="uf" type="text"  name="estado">
+
+                <input id="buscarCep" type="button" value="BUSCAR">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
